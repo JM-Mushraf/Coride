@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,11 +24,15 @@ body {
   padding: 0 20px;
 }
 
-.navbar-logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
+.navbar-logo img {
+  width: 45px;
+  height: 45px;
+  border: 2px double white; 
+  border-radius: 30px;
+  object-fit: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-links {
@@ -38,19 +41,23 @@ body {
   align-items: center;
 }
 
-.navbar-links a {
+.navbar-links a, .navbar-links .log {
   text-decoration: none;
   color: #fff;
   padding: 10px;
   margin: 0 5px;
 }
-
+.navbar-links .con1{
+  font-size: 22px;
+}
 .navbar-links .con1:hover {
   text-decoration: underline;
   transform: scaleX(1.1);
   transition: transform 0.2s;
   color: white;
+
 }
+
 .navbar-links .log {
   color: white;
   width: 60px;
@@ -66,8 +73,8 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  text-decoration: none;
 }
+
 .toggle-button {
   background-color: transparent;
   border: none;
@@ -102,28 +109,44 @@ body {
 .toggle-button .bar.open:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
 .prof {
   margin: 0px -60px 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.prof a:hover{
-  color: white;
+
+.prof img {
+  height: 40px;
+  width: 40px;
+  object-fit: center;
+  border-radius: 30px;
 }
-.log:hover{
+
+.prof img:hover {
+  opacity: 0.8;
+}
+
+.log:hover {
   background: rgba(255, 255, 255, 0.365);
   color: black;
   transform: scaleX(1.1);
   transition: transform 0.2s;
 }
+
 @media screen and (max-width: 1290px) {
   .prof {
     margin: 0px -20px 0px 60px;
   }
 }
+
 @media screen and (max-width: 760px) {
   .prof {
     margin: 0px -20px 0px 30px;
   }
 }
+
 @media screen and (max-width: 700px) {
   .prof {
     margin: 0px 0px 0px 0px;
@@ -143,12 +166,13 @@ body {
 
   .navbar-links.active {
     display: flex;
-    margin: -2rem -1rem 0rem 15rem;
+    margin:0rem -1rem 0rem 14rem;
   }
 
-  .navbar-links a {
+  .navbar-links a, .navbar-links .log {
     margin: 5px 0;
   }
+  
   .navbar-links .log {
     width: 50px;
     height: 10px;
