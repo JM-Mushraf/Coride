@@ -1,0 +1,42 @@
+.mytrip-details-box{
+    width: 80%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border:1px solid rgb(37, 178, 233);
+    border-radius: 15px;
+    align-items: center;
+    min-height: 8rem;
+    justify-content: center;
+    gap: 1rem;
+    padding: 28px 0px 15px 0px;
+    margin-top: 3px;
+    color: white;
+    margin-top: 10px;
+}
+
+.mytrip-delete{
+    cursor: pointer;
+    background: transparent;
+    transition:0.2s ease-in;
+    font-size:22px;
+    color: red;
+}
+
+.mytrip-delete:hover{
+    transform: scale(1.4);
+    border-radius: 50px;
+    border: 2px solid red;
+    font-size: 18px;
+}
+.mytrip-date{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.s1>div>:nth-child(1){
+    color:rgb(37, 178, 233);
+}
+.s1>div>:nth-child(2){
+    letter-spacing: 1px;
+}

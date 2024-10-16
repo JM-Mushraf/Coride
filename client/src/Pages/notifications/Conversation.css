@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.follower_conversation {
+  border-bottom: 0.1px solid rgba(37, 178, 233, 0.656);
+  padding-bottom: 7px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.follower_conversation-in {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+}
+
+.followerImage123 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  image-rendering: auto;
+  object-fit: cover;
+  border: 2px solid rgb(37, 178, 233);
+}
+
+.active-conversation {
+  background: linear-gradient(90deg, rgba(37, 178, 233, 0.6), gray);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.follower_conversation .selected {
+  background-color: rgba(37, 178, 233, 0.8);
+}
+
+.follower_conversation-in:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background-color: rgba(37, 178, 233, 0.476);
+  border-radius: 7px;
+}
+
+.follower_conversation-in .name {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .follower_conversation-in .name {
+    font-size: 20px;
+  }
+
+  .followerImage123 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .follower_conversation-in .name {
+    font-size: 18px;
+  }
+
+  .followerImage123 {
+    width: 35px;
+    height: 35px;
+  }
+}

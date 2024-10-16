@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.mcont {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mcont .cont1-ct {
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:transparent;
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(37, 178, 233, 0.5);
+}
+
+.mcont .cont1-ct .ct {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-weight: 500;
+    gap: 10px;
+    letter-spacing: 2px;
+}
+.mcont .cont1-ct .ct :nth-child(2) {
+    color: rgb(37, 178, 233);
+}
+
+.mcont .cont1-ct .from-ct {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mcont .cont1-ct .from-ct div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mcont .cont1-ct .from-ct .ctfi {
+    width: calc(100% - 8rem);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    color: white;
+    background-color: rgba(23, 28, 34, 0.2);
+}
+
+.mcont .cont1-ct .from-ct .ctfi:focus {
+    border-color: rgb(37, 178, 233);
+    box-shadow: 0 0 3px rgb(37, 178, 233);
+}
+
+.mcont .cont1-ct .bt-ct {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mcont .cont1-ct .bt-ct button {
+    border: none;
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 16px;
+    background-color: rgb(37, 178, 233);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.mcont .cont1-ct .bt-ct button:hover {
+    background-color: rgb(31, 154, 202);
+    box-shadow: 0 0 10px rgba(37, 178, 233, 0.5);
+}
+
+.mcont .gemini-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gemini-container button {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(37, 178, 233);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.gemini-container button:hover {
+    background-color: rgb(31, 154, 202);
+    box-shadow: 0 0 10px rgba(37, 178, 233, 0.5);
+}
+.mcont .gemini-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.mcont .gemini-container p :nth-child(1){
+    color:rgb(31, 154, 202);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    .mcont .cont1-ct {
+        width: 90%;
+    }
+
+    .mcont .cont1-ct .from-ct .ctfi {
+        width: 100%;
+    }
+}

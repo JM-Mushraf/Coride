@@ -1,0 +1,38 @@
+.ft-cont{
+    width: 96.7vw;
+    height: 10rem;
+    margin:0rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.ft-cont .ft-cont2{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ft-cont .ft-cont2 ul{
+    display: flex;
+    gap: 30px;
+    font-size: 19px;
+    padding: 1.5rem 10rem 1.5rem 10rem;
+}
+.ft-cont .ft-cont2 ul .Link{
+    text-decoration:underline;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.ft-cont .ft-cont2 ul .Link:hover{
+    color:rgb(37, 178, 233);
+}
+.ft-cont .ft-cont2 ul .Link img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius:1rem;
+}

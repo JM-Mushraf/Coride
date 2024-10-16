@@ -1,0 +1,63 @@
+/* src/App.css */
+.admin-dashboard {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Light background for better contrast */
+}
+
+.admin-logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.admin-logout button {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-logout button:hover {
+  background-color: #ff1a1a;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.admin-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-cards-container p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 10px;
+  }
+
+  .admin-logout button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

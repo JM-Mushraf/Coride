@@ -1,0 +1,36 @@
+.home-slider {
+  background-color:transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -5rem;
+  border-radius: 10px;
+  border:none;
+  text-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.homeslider-container {
+  display: inline-block;
+
+}
+
+.text {
+  font-size: 5em;
+  letter-spacing: 10px;
+  /* border-right: 5px solid; */
+  width: 100%;
+  text-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(18), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {}
+}
+
+@keyframes typing {
+  from { width: 0; }
+}

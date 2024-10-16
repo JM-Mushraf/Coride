@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+.home-container{
+    max-width: 100%;
+    color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.restrict-container {
+    text-align: center;
+    /* background: rgba(255, 255, 255, 0.9); */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin:3rem 2rem 3rem 2rem;
+}
+
+.restrict-container h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #4a90e2;
+}
+
+.restrict-container p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.476);
+}
+
+.restrict-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.restrict-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* background: #4a90e2; */
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    transition: background 0.3s;
+    border: 0.001px dotted rgb(37, 178, 233);
+}
+
+.restrict-button:hover {
+    background: #357ab8;
+}
+
+.search{
+    display: flex;
+    max-width: 100%;
+    background-color: rgb(212, 212, 212);
+    min-height: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 10px;
+    margin:1rem 1rem 0 1rem
+}
+
+.trip-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    /* align-items: center; */
+} 
+.trip-card-container{
+    width:98vw;
+    margin:70px 10px 55px 10px;
+    min-height: 25rem;
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* flex: 1; */
+}
+
+.search .date-picker {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-slider{
+    background-color: rgb(225, 225, 225);
+    /* position: absolute; */
+    height: 50vh;
+    margin-bottom: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+    align-content: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    
+}
+.sep{
+    width: 98vw;
+    height: 2px;
+    background-color: grey;
+}
+
+#userid{
+    text-decoration: none;
+}
+@media(max-width:600px){
+    .search{
+        flex-direction: column;
+    }
+}
+
+.sep-con{
+    display: flex;
+    flex-direction:row;
+    gap: 10rem;
+    font-family: "Creepster", system-ui;
+    font-optical-sizing: auto;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+.sep-con img{
+    width: 20rem;
+    height: 20rem;
+}
+.sep-con2{
+    display: flex;
+    flex-direction:column;
+    gap:4px;
+    justify-content:center;
+    align-items: center;
+}
+.sep-con22{
+    display: flex;
+    flex-direction:column;
+    gap:4px;
+    justify-content:center;
+    align-items: center;
+}
+.sep-con :nth-child(2){
+    color: white;
+}
+.sep-con2 :nth-child(1){
+    color:rgb(37, 178, 233);
+}
+.sep-con2 :nth-child(3){
+    color:rgb(37, 178, 233);
+}
+.sep-con .sep-con22 :nth-child(1){
+    color:rgb(37, 178, 233);
+}
+.sep-con .sep-con22 :nth-child(3){
+    color:rgb(37, 178, 233);
+}
+.sep-con .sep-con22img{
+    margin: 1rem 0rem;
+    width: 23rem;
+    height: 15rem;
+}

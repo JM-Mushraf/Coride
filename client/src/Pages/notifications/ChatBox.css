@@ -1,0 +1,185 @@
+.ChatBox-container {
+  background: #1a1a1a;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 12vh auto 10vh;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  max-height: 85vh; 
+  border: 0.001px dotted rgba(37, 178, 233, 0.324);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.149);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, #2d2d2d77, rgba(37, 178, 233, 0.593));
+  border-bottom: 1px solid #4444447d;
+  height: 12vh; 
+  padding-left:10px;
+}
+
+.followerImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  image-rendering: auto; 
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(37, 178, 233);
+}
+
+.name {
+  font-size: 1.4rem; 
+  margin-right: 10px;
+  color: white;
+}
+
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem; 
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: #121212;
+  color: #d3d3d3;
+  max-height: 63vh;
+}
+
+.message {
+  background: #292929;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 1rem 1rem 1rem 0;
+  max-width: 26rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.message.own {
+  align-self: flex-end;
+  border-radius: 1rem 1rem 0 1rem;
+  background: rgb(37, 178, 233);
+  
+}
+
+.message > span:nth-child(2) {
+  font-size: 0.75rem; 
+  align-self: end;
+}
+
+.chat-sender {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  /* gap: 1rem; */
+  padding: 0.8rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.chat-sender > div:nth-of-type(1) {
+  background: rgb(50, 50, 50);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.chat-sender > div {
+  height: 80%; 
+  padding: 0px 15px;
+  color: white;
+}
+
+.send-button {
+  background-color: rgb(37, 178, 233);
+  color: white;
+  padding: 9px 19px 9px 19px;
+  border-radius:20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.send-button:hover {
+  background-color: #2196f3;
+}
+
+
+@media (max-width: 1024px) {
+  .ChatBox-container {
+    max-height: 75vh;
+  }
+
+  .chat-header {
+    height: 10vh;
+  }
+
+  .followerImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .message {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ChatBox-container {
+    max-height: 70vh;
+  }
+
+  .chat-header {
+    height: 9vh;
+  }
+
+  .followerImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .message {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ChatBox-container {
+    max-height: 65vh;
+  }
+
+  .chat-header {
+    height: 8vh;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .message {
+    max-width: 18rem;
+  }
+}

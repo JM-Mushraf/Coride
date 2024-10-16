@@ -1,0 +1,20 @@
+---------------- CORIDE DOCUMENTATION ----------------------
+LOGIN
+FRONTEND 
+-use formData 
+-take input
+-dispatch(login(userCredentials))
+    go to (1) present in userAction
+
+ 
+
+----------
+BACKEND
+(1)
+    dispatch(login req)
+    axios.post('/login') goes to (2) in userController
+
+(2)
+    bcrypt comparision and running the func. sendToken to send cookie and jwt
+    
+    

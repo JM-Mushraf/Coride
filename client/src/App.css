@@ -1,0 +1,17 @@
+
+input{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    
+}
+
+body{
+    overflow-x:hidden;
+    /* overflow: hidden; */
+    /* background-color: #1e1e1e; */
+    /* background-color:rgba(23, 28, 34, 1); */
+}
+::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
