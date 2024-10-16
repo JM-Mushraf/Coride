@@ -16,5 +16,5 @@ Co-ride is a web application developed to connect people traveling to similar de
 - **Frontend:** React.js, HTML5, CSS3
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **APIs:** Google Maps API for location services
+- **APIs:**Gemini API for fare calculation
 - **File Uploads:** Multer for profile images
